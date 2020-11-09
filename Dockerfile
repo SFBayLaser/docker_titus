@@ -1,4 +1,4 @@
-FROM icarusalg:latest
+FROM sfbaylaser/icarusalg:latest
 LABEL Maintainer: Tracy Usher
 
 # Download and build TITUS
