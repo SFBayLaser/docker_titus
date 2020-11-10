@@ -16,3 +16,4 @@ RUN cd / && \
   cd UserDev/EventDisplay && \
   make 
 
+COPY setup_titus.sh /setup_titus.sh
