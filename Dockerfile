@@ -1,6 +1,9 @@
 FROM sfbaylaser/icarusalg:latest
 LABEL Maintainer: Tracy Usher
 
+# Fix missing libraries
+RUN yum install -y libXi libXrender
+
 # Download and build TITUS
 RUN cd / && \
   source larsoft/products/setup && \
