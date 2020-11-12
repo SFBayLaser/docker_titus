@@ -5,11 +5,11 @@ LABEL Maintainer: Tracy Usher
 RUN useradd -m docker 
 RUN echo "docker:test" | chpasswd 
 RUN usermod -s /bin/bash docker 
-RUN usermod -aG sudo docker 
+RUN usermod -aG wheel docker 
 ENV HOME /home/docker
 
 # Fix missing libraries
-RUN yum install -y libXi libXrender libXpm libXft libSM
+#RUN yum install -y libXi libXrender libXpm libXft libSM
 
 # Download and build TITUS
 RUN cd / && \
