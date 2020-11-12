@@ -1,8 +1,15 @@
 FROM sfbaylaser/icarusalg:latest
 LABEL Maintainer: Tracy Usher
 
+# Add user so that container does not run as root 
+RUN useradd -m docker 
+RUN echo "docker:test" | chpasswd 
+RUN usermod -s /bin/bash docker 
+RUN usermod -aG sudo docker 
+ENV HOME /home/docker
+
 # Fix missing libraries
-RUN yum install -y libXi libXrender
+RUN yum install -y libXi libXrender libXpm libXft libSM
 
 # Download and build TITUS
 RUN cd / && \
