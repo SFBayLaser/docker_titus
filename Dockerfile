@@ -8,9 +8,6 @@ RUN usermod -s /bin/bash docker
 RUN usermod -aG wheel docker 
 ENV HOME /home/docker
 
-# Fix missing libraries
-#RUN yum install -y libXi libXrender libXpm libXft libSM
-
 # Download and build TITUS
 RUN cd / && \
   source larsoft/products/setup && \
