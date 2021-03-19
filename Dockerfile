@@ -17,7 +17,7 @@ RUN cd / && \
   setup icarusalg v09_18_00 -q e19:prof && \
   git clone https://github.com/TITUS-EVD/gallery-framework && \
   cd gallery-framework && \
-  git checkout develop && \
+  git checkout master && \
   source config/setup.sh && \
   make all && \
   cd UserDev/EventDisplay && \
