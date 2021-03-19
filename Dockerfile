@@ -14,7 +14,7 @@ RUN cd / && \
   setup mrb && \
   export MRB_PROJECT=icarusalg && \
   source icarusalg/localProducts_*/setup && \
-  setup icarusalg v09_09_01 -q e19:prof && \
+  setup icarusalg v09_18_00 -q e19:prof && \
   git clone https://github.com/TITUS-EVD/gallery-framework && \
   cd gallery-framework && \
   git checkout develop && \
