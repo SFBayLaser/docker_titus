@@ -9,5 +9,5 @@ source larsoft/products/setup
 setup mrb
 export MRB_PROJECT=icarusalg
 source icarusalg/local*/setup
-setup icarusalg v09_40_00 -q e20:prof
+setup icarusalg v09_29_00 -q e20:prof
 source gallery-framework/config/setup_evd.sh
