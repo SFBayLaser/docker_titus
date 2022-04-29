@@ -10,11 +10,11 @@ ENV HOME /home/docker
 
 # Download and build TITUS
 RUN cd / && \
-  source larsoft/products/setup && \
+  source /larsoft/products/setup && \
   setup mrb && \
   export MRB_PROJECT=icarusalg && \
   source icarusalg/localProducts_*/setup && \
-  setup icarusalg v09_29_00 -q e20:prof && \
+  setup icarusalg v09_48_00 -q e20:prof && \
   git clone https://github.com/TITUS-EVD/gallery-framework && \
   cd gallery-framework && \
   git checkout master && \
